@@ -5,10 +5,10 @@ from scipy.integrate import solve_ivp
 
 
 # 1. PARÁMETROS DEL SISTEMA
-M = 500.0     # Masa de la pluma (kg)
-m = 100.0      # Masa del péndulo/gancho (kg)
-L = 10.0      # Longitud de la pluma (m)
-l = 2.0       # Longitud de la cuerda del péndulo (m)
+M = 10000.0     # Masa de la pluma (kg)
+m = 10.0    # Masa del péndulo/gancho (kg)
+L = 30.0      # Longitud de la pluma (m)
+l = 10.0       # Longitud de la cuerda del péndulo (m)
 g = 9.81      # Aceleración de la gravedad (m/s^2)
 H = 50.0      # Altura de la grúa sobre el suelo (m)
 I_cm = (1.0 / 12.0) * M * L**2
@@ -64,7 +64,7 @@ phi_0= 0.0         # Ángulo inicial de la pluma
 theta_0 = 1.2      # Ángulo inicial de desviación del péndulo en radianes 
 vx_0 = 0.0         # Velocidad incial en el eje x
 vy_0 = 0.0         # Velocidad incial en el eje y
-w_phi_0 = 0.5      # Velocidad angular inicial para la pluma (rad/s)
+w_phi_0 = 0.2      # Velocidad angular inicial para la pluma (rad/s)
 w_theta_0 = 0.0    # Velocidad angular incial para el pendulo (rad/s)
 
 state_0 = [x_cm_0, y_cm_0, phi_0, theta_0, vx_0, vy_0, w_phi_0, w_theta_0]
